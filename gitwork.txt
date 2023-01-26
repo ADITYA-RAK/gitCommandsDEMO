@@ -1,0 +1,71 @@
+>git --version /gives the version of git installed on the machine/
+>cd ..         /chnge to parent directory/
+>cd ..
+>git init      /it initiates empties git repository/
+>cls           /clears cli/
+>git config --global user.name "ADITYA-RAK" /   
+>git config --global user.mail "adityakumarrak2@gmail.com"
+>notepad sample.txt  /to create a new txt file in notepad/
+>git status    /gives the status of new file to local repo/
+>git add sample.txt  /adding the argument file to local repo/
+>notepad sample.txt
+>git status    /check status of the local repository/
+>git commit -m "My First Commit" sampl.txt   /commit a file with a message o the local repo/
+>git clone https://github.com/ADITYA-RAK/gitCommandsDEMO.git   /cloning the remote repo to local repo/
+>dir   /check the contents of the directory/
+>git branch gitCommandsDEMO   /create new branch in the clone of remote epo in local repo/
+>git status
+>copy sample.txt C:\gitCommands\gitCommandsDEMO\sample.txt /copy the file to the clone of remote reo/
+>cd gitCommandsDEMO
+>git status
+>git sample.txt
+>git commit -m "my First commit " sample.txt
+>git push     /push the file from local repo to remote repo/
+>git pull     /pulls update files or new file from remote repo to ocal repo/
+
+
+EXERCISES
+git --version  /Insert the missing part of the command to check which version of Git (if any) is installed./
+git init
+git config user.name "w3schools-test"
+git status
+git add idex.html
+git add -A  /Stge all new, modified, and deleted files. Use the shorthand command/
+git commit -m "First Release"
+git status --short  /Check the compact version of the status for repository:/
+git commit -a -m "New Line added"  /commit the updated files directly, skipping the staging environment:/
+git log  /View the history of commits for the repository:/
+git status -help  /Show the possible options for the status command in command line:/
+git help --all   /Show all git possible commands in command line:/ 
+git branch hello-world-images
+git branch  /List the existing branches/
+git checkout hello-world-images   /Move to the hello-world-images branch/
+git checkout -b hello-you   /Create, and move to a new branch with the name hello-you/
+git merge hello-you   /Merge the hello-you branch with the current branch:/
+git branch -d hello-you  /Remove the hello-you branch from the local repository:/
+git remote add origin https://github.com/x/y.git  /Add a remote repository as an origin:/
+pull is a ombination of : fetch and merge
+git fetch origin  /Get all the change history of the origin for this branch:/
+git merge origin/master  /Merge the current branch with the branch master, on origin:/
+git pull origin   /Update the current branch from its origin using a single command:
+git push origin  /push the current branch to its default remote origin:/
+git branch -a  /List all local and remote branches of the current Git./
+git branch -r  /List only remote branches of the current Git./
+git clone https://abc.com/x/y.git  /Clone the repository: https://abc.com/x/y.git to your local Git:/
+git clone https://abc.com/x/y.git newlife  /Clone the repository https://abc.com/x/y.git to a folder named "newlife":/
+git remote rename origin upstream  /Rename the origin remote to upstream:/
+*.temp  /In .gitignore add a line to ignore all .temp files:/
+temp/  /In .gitignore add a line to ignore all files in any directory named temp:/
+temp?.log  /In .gitignore add a single line to ignore all files named temp1.log, temp2.log, and temp3.log:/
+*.log
+!main.log  /In .gitignore, ignore all .log files, except main.log:/
+git remote add ssh-origin git@abc.com:x/y.git   /Add a new remote named ssh-origin connecting to x/y.git on abc.com using SSH:/
+git remote set-url origin git@abc.com:x/y.git  /Replace the remote URL for origin with x/y.git on abc.com using SSH:/
+git log --oneline  /Show the log of the repository, showing just 1 line per commit:/
+git revert HEAD  /revert the latest commit:/
+git revert HEAD --no-edit  /revert the latest commit, skipping the commit message editor:/
+git revert HEAD~1   /revert the two last commits:/
+git reset abc1234  /reset to the commit with the hash abc1234:/
+git commit --amend -m "Updated index"  /Updated index/
+
+git stash pop   /pushes uncomplete code to a temporary location from where it can be retrieved from later/
