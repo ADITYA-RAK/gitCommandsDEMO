@@ -11,8 +11,9 @@ public class Arithmetic {
     public int mult(int m,int n) {
         return m*n;
     }
-    public int div(int p,int q) {
-        return p/q;
+    public int div(int p,int q) {return p/q;}
+    public int sub(int d,int d){
+        return c-d;
     }
     public static void main(String[] args) {
         Arithmetic arithmetic = new Arithmetic();
@@ -20,6 +21,7 @@ public class Arithmetic {
         System.out.println("subtracting two numbers - "+ arithmetic.sub(9,5));
         System.out.println("multiplying two numbers - "+ arithmetic.mult(15,12));
         System.out.println("dividing two numbers - "+ arithmetic.div(225,15));
+        System.out.println("remainder of two numbers - "+ arithmetic.remainder(77,6));
     }
 
 }
