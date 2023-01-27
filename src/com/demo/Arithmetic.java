@@ -12,9 +12,6 @@ public class Arithmetic {
         return m*n;
     }
     public int div(int p,int q) {return p/q;}
-    public int sub2(int c,int d){
-        return c-d;
-    }
     public static void main(String[] args) {
         Arithmetic arithmetic = new Arithmetic();
         System.out.println("Adding two number -"+ arithmetic.add(6,9));
